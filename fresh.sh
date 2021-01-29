@@ -31,7 +31,7 @@ $HOME/.composer/vendor/bin/valet install
 mkdir $HOME/Sites
 
 # Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
+# mkdir $HOME/Sites/blade-ui-kit
 mkdir $HOME/Sites/laravel
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
