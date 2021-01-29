@@ -34,9 +34,6 @@ mkdir $HOME/Sites
 mkdir $HOME/Sites/blade-ui-kit
 mkdir $HOME/Sites/laravel
 
-# Clone Github repositories
-./clone.sh
-
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
