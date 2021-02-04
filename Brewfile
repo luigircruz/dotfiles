@@ -67,6 +67,7 @@ cask 'transmission'
 cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'iterm2'
 
 # Quicklook
 cask 'qlmarkdown'
