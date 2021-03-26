@@ -1,7 +1,8 @@
 # Luigi's Dotfiles
 
-This repository is a fork from Dries's [dotfiles](https://github.com/driesvints/dotfiles). I have modified it to cater the apps that I use and my workflow on my M1 MacBook. 
-This will serve as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
+This repository is a fork from Dries's [dotfiles](https://github.com/driesvints/dotfiles). I have modified it to cater the apps and settings that I use on my M1 MacBook. 
+
+This configs will serve as a tool to help me automate the setup of my Mac. It takes a ton of effort when you install everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
 
 📖 Read Dries's blog post: https://driesvints.com/blog/getting-started-with-dotfiles  
 📺 Watch his screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
