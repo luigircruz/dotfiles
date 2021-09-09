@@ -44,7 +44,6 @@ brew 'yarn'
 
 # Apps
 cask '1password'
-cask '1password-cli'
 cask 'caffeine'
 cask 'dbngin'
 cask 'discord'
