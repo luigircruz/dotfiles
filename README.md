@@ -6,9 +6,9 @@ This repository is a fork from Dries's [dotfiles](https://github.com/driesvints/
 
 This configs will serve as a tool to help me automate the setup of my Mac. It takes a ton of effort when you install everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
 
-📖 - [Read Dries's blog post](https://driesvints.com/blog/getting-started-with-dotfiles)
-📺 - [Watch his screencast on Laracasts](https://laracasts.com/series/guest-spotlight/episodes/1)
-💡 - [Learn how to build your own dotfiles](https://github.com/luigircruz/dotfiles#your-own-dotfiles)
+- 📖 [Read Dries's blog post](https://driesvints.com/blog/getting-started-with-dotfiles)
+- 📺 [Watch his screencast on Laracasts](https://laracasts.com/series/guest-spotlight/episodes/1)
+- 💡 [Learn how to build your own dotfiles](https://github.com/luigircruz/dotfiles#your-own-dotfiles)
 
 ## A Fresh macOS Setup
 
