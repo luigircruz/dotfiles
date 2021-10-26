@@ -62,11 +62,11 @@ cask 'vlc'
 cask 'iterm2'
 cask 'postman'
 cask 'dropbox'
+cask 'zoom'
 
 # Quicklook
 cask 'qlmarkdown'
 cask 'quicklook-json'
-cask 'quicklook-csv'
 
 # Fonts
 cask 'font-lato'
