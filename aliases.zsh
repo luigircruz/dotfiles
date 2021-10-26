@@ -16,6 +16,7 @@ alias docs="lara && cd docs/"
 alias luigi="sites && cd luigicruz.dev/"
 alias pkgs="cd $HOME/Packages"
 alias practice="cd $HOME/Practice"
+alias tutorials="cd $HOME/Tutorials"
 
 # Laravel
 alias a="php artisan"
