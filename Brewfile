@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -49,9 +50,9 @@ cask 'dbngin'
 cask 'discord'
 cask 'docker'
 cask 'figma'
-cask 'firefox'
 cask 'github'
 cask 'google-chrome'
+cask 'google-drive'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'signal'
@@ -63,6 +64,7 @@ cask 'iterm2'
 cask 'postman'
 cask 'dropbox'
 cask 'zoom'
+cask 'phpmon'
 
 # Quicklook
 cask 'qlmarkdown'
