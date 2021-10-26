@@ -1,11 +1,14 @@
 # Luigi's Dotfiles
 
+## Introduction
+
 This repository is a fork from Dries's [dotfiles](https://github.com/driesvints/dotfiles). I have modified it to cater the apps and settings that I use on my M1 MacBook. 
 
 This configs will serve as a tool to help me automate the setup of my Mac. It takes a ton of effort when you install everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
 
-📖 Read Dries's blog post: https://driesvints.com/blog/getting-started-with-dotfiles  
-📺 Watch his screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
+📖 - [Read Dries's blog post](https://driesvints.com/blog/getting-started-with-dotfiles)
+📺 - [Watch his screencast on Laracasts](https://laracasts.com/series/guest-spotlight/episodes/1)
+💡 - [Learn how to build your own dotfiles](https://github.com/luigircruz/dotfiles#your-own-dotfiles)
 
 ## A Fresh macOS Setup
 
@@ -31,7 +34,6 @@ If you did all of the above you may now follow these install instructions to set
 
 1. Update macOS to the latest version with the App Store
 2. [Generate a new public and private SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) by running:
-
    ```zsh
    curl https://raw.githubusercontent.com/luigircruz/dotfiles/HEAD/ssh.sh | sh -s "<your-email-address>"
    ```
@@ -39,13 +41,16 @@ If you did all of the above you may now follow these install instructions to set
     ```zsh
     git clone git@github.com:luigircruz/dotfiles.git ~/.dotfiles
     ```
-4. Run `~/.dotfiles/fresh.sh` to start the installation
+4. Run the installation with:
+    ```zsh
+    ~/.dotfiles/fresh.sh
+    ```
 5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 6. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
-> Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
+> You can use a different location than `~/.dotfiles` if you want. Make sure you also update the reference in the [`.zshrc`](./.zshrc#L2) file.
 
 ## Your Own Dotfiles
 
