@@ -60,6 +60,7 @@ cask 'iterm2'
 cask 'postman'
 cask 'dropbox'
 cask 'phpmon'
+cask 'keycastr'
 
 # Quicklook
 cask 'qlmarkdown'
