@@ -20,7 +20,7 @@ alias tutorials="cd $HOME/Tutorials"
 
 # Laravel
 alias a="php artisan"
-alias fresh="php artisan migrate:fresh --seed"
+alias mfs="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 
 # PHP
