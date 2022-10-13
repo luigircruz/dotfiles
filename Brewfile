@@ -46,7 +46,6 @@ brew 'yarn'
 # Apps
 cask 'caffeine'
 cask 'dbngin'
-cask 'discord'
 cask 'docker'
 cask 'github'
 cask 'google-chrome'
