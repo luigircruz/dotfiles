@@ -18,6 +18,9 @@ alias pkgs="cd $HOME/Packages"
 alias practice="cd $HOME/Practice"
 alias tutorials="cd $HOME/Tutorials"
 
+# Vim
+alias vim="nvim"
+
 # Laravel
 alias a="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
