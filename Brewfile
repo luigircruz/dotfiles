@@ -22,6 +22,8 @@ brew 'svn'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
+brew 'neovim'
+brew 'tmux'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -32,7 +34,6 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
-brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
 brew 'libmemcached'
@@ -42,12 +43,11 @@ brew 'nginx'
 brew 'node'
 brew 'redis'
 brew 'yarn'
-brew 'neovim'
+brew 'pnpm'
 
 # Apps
 cask 'caffeine'
 cask 'dbngin'
-cask 'docker'
 cask 'github'
 cask 'google-chrome'
 cask 'imageoptim'
