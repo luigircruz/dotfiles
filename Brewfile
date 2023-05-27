@@ -42,6 +42,7 @@ brew 'nginx'
 brew 'node'
 brew 'redis'
 brew 'yarn'
+brew 'neovim'
 
 # Apps
 cask 'caffeine'
