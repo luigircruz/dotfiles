@@ -17,6 +17,7 @@ alias luigi="sites && cd luigicruz.dev/"
 alias pkgs="cd $HOME/Packages"
 alias practice="cd $HOME/Practice"
 alias tutorials="cd $HOME/Tutorials"
+alias work="cd $HOME/Work/"
 
 # Vim
 alias vim="nvim"
@@ -61,3 +62,4 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 alias gsl="git stash list"
+alias brname="git branch -m"
