@@ -24,7 +24,7 @@ alias work="cd $HOME/Work/"
 alias vim="nvim"
 
 # Laravel
-alias a="php artisan"
+alias pls="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 
