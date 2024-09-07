@@ -24,7 +24,7 @@ alias work="cd $HOME/Work/"
 alias vim="nvim"
 
 # Laravel
-alias pls="php artisan"
+alias pa="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 
@@ -37,11 +37,9 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 alias yfresh="rm -rf node_modules/ yarn.lock && yarn install"
 alias pfresh="rm -rf node_module/ pnpm-lock.yaml && pnpm install" 
+alias nbs="npm run build && npm run start"
 alias ybs="yarn build && yarn start"
 alias pbs="pnpm build && pnpm start"
-
-# Docker
-alias docker-composer="docker-compose"
 
 # Git
 alias gst="git status"
