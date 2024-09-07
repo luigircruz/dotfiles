@@ -40,6 +40,7 @@ alias pfresh="rm -rf node_module/ pnpm-lock.yaml && pnpm install"
 alias nbs="npm run build && npm run start"
 alias ybs="yarn build && yarn start"
 alias pbs="pnpm build && pnpm start"
+alias nfreshall="find . -name "node_modules" -type d -prune -print | xargs du -chs"
 
 # Git
 alias gst="git status"
