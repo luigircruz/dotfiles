@@ -1,11 +1,10 @@
 # Taps
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
-tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
+brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
@@ -49,6 +48,8 @@ brew 'pnpm'
 # Apps
 cask 'dbngin'
 cask 'github'
+cask 'figma'
+cask 'tableplus'
 cask 'brave-browser'
 cask 'imageoptim'
 cask 'insomnia'
