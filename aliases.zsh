@@ -1,8 +1,9 @@
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias reloadshell="source $HOME/.zshrc"
+alias reloadshell="omz reload"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias code='open -a Visual\ Studio\ Code\ "`pwd`"'
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
@@ -26,6 +27,7 @@ alias vim="nvim"
 # Laravel
 alias pa="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
+alias tinker="php artisan tinker"
 alias seed="php artisan db:seed"
 
 # PHP
