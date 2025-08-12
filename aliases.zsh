@@ -67,5 +67,17 @@ alias gsl="git stash list"
 alias brname="git branch -m"
 alias nukebranch="git for-each-ref --format '%(refname:short)' refs/heads | grep -v "main" | grep -v "master" | grep -v "staging" | xargs git branch -D"
 alias createrepo="gh repo create"
-alias savepatch="git stash show -p > ~/"Library/Mobile Documents/com~apple~CloudDocs/Code/my-work.patch"
-alias applypatch="git stash apply ~/"Library/Mobile Documents/com~apple~CloudDocs/Coed/my-work.patch"
+# alias savepatch="git stash show -p > ~/"Library/Mobile Documents/com~apple~CloudDocs/Code/work-metromart.patch""
+alias applypatch="git stash apply ~/"Library/Mobile Documents/com~apple~CloudDocs/Coed/my-work.patch""
+
+# Mail Testing
+alias mailserve="mailpit --smtp 0.0.0.0:1025 --listen 0.0.0.0:8025"
+
+savepatch() {
+  # Use $HOME which is safer than ~ inside functions
+  local icloud_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Code"
+  
+  # $1 is the first argument you provide (your filename)
+  git stash show -p > "$icloud_path/$1"
+  echo "✅ Patch saved to iCloud as '$1'"
+}
