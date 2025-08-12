@@ -67,17 +67,42 @@ alias gsl="git stash list"
 alias brname="git branch -m"
 alias nukebranch="git for-each-ref --format '%(refname:short)' refs/heads | grep -v "main" | grep -v "master" | grep -v "staging" | xargs git branch -D"
 alias createrepo="gh repo create"
-# alias savepatch="git stash show -p > ~/"Library/Mobile Documents/com~apple~CloudDocs/Code/work-metromart.patch""
-alias applypatch="git stash apply ~/"Library/Mobile Documents/com~apple~CloudDocs/Coed/my-work.patch""
-
-# Mail Testing
-alias mailserve="mailpit --smtp 0.0.0.0:1025 --listen 0.0.0.0:8025"
 
 savepatch() {
   # Use $HOME which is safer than ~ inside functions
-  local icloud_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Code"
+  local icloud_path="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Code/Patches"
   
   # $1 is the first argument you provide (your filename)
   git stash show -p > "$icloud_path/$1"
   echo "✅ Patch saved to iCloud as '$1'"
 }
+
+# Function to apply a named patch from your iCloud Code folder
+loadpatch() {
+  # Check if a filename was provided
+  if [ -z "$1" ]; then
+    echo "Usage: loadpatch <patch-filename.patch>"
+    echo "Error: You must provide the name of the patch file to apply."
+    return 1 # Exit with an error
+  fi
+
+  # Define the path to your iCloud Code folder
+  local icloud_dir="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Code/Patches"
+  local patch_file="$1"
+  local full_path="$icloud_dir/$patch_file"
+
+  # Check if the patch file actually exists before trying to apply it
+  if [ ! -f "$full_path" ]; then
+    echo "❌ Error: Patch '$patch_file' not found in iCloud."
+    return 1
+  fi
+
+  # Apply the patch from the full iCloud path
+  git apply "$full_path"
+
+  echo "✅ Patch '$patch_file' applied from iCloud."
+}
+
+# Mail Testing
+alias mailserve="mailpit --smtp 0.0.0.0:1025 --listen 0.0.0.0:8025"
+
