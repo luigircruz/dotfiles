@@ -1,0 +1,7 @@
+[user]
+  name = Luigi Cruz
+  email = luigicruz.dev@gmail.com
+
+[commit]
+  template = ~/.config/git/template
+  verbose = true # add more context to commit messages
