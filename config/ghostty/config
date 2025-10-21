@@ -3,10 +3,6 @@ font-family = "Fira Code"
 font-style = Regular
 font-size = 12
 
-# Colors
-background = FFFFFF
-foreground = 1b1f23
-
 # Window
 window-padding-balance = true
 window-padding-x = 14
@@ -21,3 +17,5 @@ cursor-style = "block"
 cursor-style-blink = false
 shell-integration-features = no-cursor
 
+# Theme
+theme = "Rose Pine Dawn"
