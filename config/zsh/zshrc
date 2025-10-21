@@ -1,0 +1,12 @@
+# Add to the bottom of your .zshrc file
+
+# Removes ghostty config file from $HOME/.config/ghostty/ (if it exists) and symlinks the ghostty config file from the .dotfiles
+rm -rf $HOME/.config/ghostty/config
+ln -sw $DOTFILES/config/ghostty/config $HOME/.config/ghostty/config
+
+# Removes .tmux.conf from $HOME (if it exists) and symlinks the .tmux.conf file from the .dotfiles
+rm -rf $HOME/.tmux.conf
+ln -sw $DOTFILES/config/tmux/tmux.conf $HOME/.tmux.conf
+
+# Source aliases from .dotfiles
+source $DOTFILES/config/zsh/aliases.zsh
