@@ -1,4 +1,5 @@
-# Add to the bottom of your .zshrc file
+# Path to your dotfiles.
+export DOTFILES=$HOME/Code/dotfiles
 
 # Removes ghostty config file from $HOME/.config/ghostty/ (if it exists) and symlinks the ghostty config file from the .dotfiles
 rm -rf $HOME/.config/ghostty/config
