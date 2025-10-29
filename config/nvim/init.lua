@@ -1,32 +1,56 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-  if vim.v.shell_error ~= 0 then
-    vim.api.nvim_echo({
-      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out, "WarningMsg" },
-      { "\nPress any key to exit..." },
-    }, true, {})
-    vim.fn.getchar()
-    os.exit(1)
-  end
+require 'core.options' -- Load general options
+require 'core.keymaps' -- Load general keymaps
+require 'core.snippets' -- Custom code snippets
+
+-- Install package manager
+local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system {
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
+  }
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("mappings")
-require("lazy").setup({
-  spec = {
-    { import = "plugins" },
+-- Setup plugins
+require('lazy').setup({
+  require 'plugins.autocompletion',
+  require 'plugins.bufferline',
+  require 'plugins.colorscheme',
+  require 'plugins.indent-blankline',
+  require 'plugins.lsp',
+  require 'plugins.lualine',
+  require 'plugins.neo-tree',
+  require 'plugins.none-ls',
+  require 'plugins.telescope',
+  require 'plugins.treesitter',
+  -- require 'plugins.lazygit',
+  -- require 'plugins.comment',
+  -- require 'plugins.debug',
+  -- require 'plugins.gitsigns',
+  require 'plugins.vim-tmux-navigator',
+}, {
+  ui = {
+    -- If you have a Nerd Font, set icons to an empty table which will use the
+    -- default lazy.nvim defined Nerd Font icons otherwise define a unicode icons table
+    icons = vim.g.have_nerd_font and {} or {
+      cmd = '⌘',
+      config = '🛠',
+      event = '📅',
+      ft = '📂',
+      init = '⚙',
+      keys = '🗝',
+      plugin = '🔌',
+      runtime = '💻',
+      require = '🌙',
+      source = '📄',
+      start = '🚀',
+      task = '📌',
+      lazy = '💤 ',
+    },
   },
-  defaults = {
-    lazy = false,
-    version = false, -- always use the latest git commit
-  },
-  install = { colorscheme = { "rose-pine" } },
-  checker = {
-    enabled = true, -- check for plugin updates periodically
-    notify = false, -- notify on update
-  }, -- automatically check for plugin updates
 })
-
