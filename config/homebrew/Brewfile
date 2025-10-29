@@ -1,83 +1,52 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-# Library for command-line editing
+
+brew 'gh'
+brew 'git'
+brew 'neovim'
+brew 'php'
+brew 'composer'
+brew 'mysql'
+brew 'nginx'
+brew 'node'
+brew 'redis'
+brew 'yarn'
+brew 'pnpm'
 brew "readline"
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Cross-platform make
 brew "cmake"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU compiler collection
 brew "gcc"
-# Fast, highly customisable system info script
-brew "neofetch"
-# Platform built on V8 to build network applications
-brew "node"
-# File browser
 brew "ranger"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Powerful, clean, object-oriented scripting language
 brew "ruby"
-# Safe, concurrent, practical language
 brew "rust"
-# Terminal multiplexer
 brew "tmux"
-# Plugin manager for tmux
 brew "tpm"
-# General-purpose lossless data-compression library
 brew "zlib"
-# Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
-# Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Cross-shell prompt for astronauts
 brew "starship"
-# Cryptography and SSL/TLS Toolkit
 brew "openssl@3", link: false
-# Object-relational database system
 brew "postgresql@18"
-# Command-line interface for SQLite
 brew "sqlite"
-# PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Modern, maintained replacement for ls
 brew "eza"
-# A better cd command
 brew "zoxide"
-# Simple terminal UI for git commands
 brew "lazygit"
-# Application uninstaller
-cask "appcleaner"
-# Web browser focusing on privacy
+cask 'tableplus'
 cask "brave-browser"
-# Universal database tool and SQL client
-cask "dbeaver-community"
-# App to build and share containerized applications and microservices
 cask "docker"
-# Developer targeted fonts with a high number of glyphs
+cask 'imageoptim'
 cask "font-fira-code"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-symbols-only-nerd-font"
-# Grammarly for desktop
-cask "grammarly-desktop"
-# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Music streaming service
 cask "spotify"
-# Keyboard customizer
 cask "karabiner-elements"
-# Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
 cask "vlc"
-# App that enables mouse-free UI interaction
 cask "shortcat"
