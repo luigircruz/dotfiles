@@ -11,6 +11,10 @@ confirm-close-surface=false
 resize-overlay = never
 fullscreen = true
 maximize = true
+window-show-tab-bar = never
+macos-window-buttons = hidden
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
 
 # Cursor styling
 cursor-style = "block"
