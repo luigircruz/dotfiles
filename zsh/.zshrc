@@ -106,9 +106,5 @@ source $ZSH/oh-my-zsh.sh
 # Path to your dotfiles.
 export DOTFILES=$HOME/dotfiles
 
-# Removes aerospace.toml from $HOME/.config/aerospace/ (if it exists) and symlinks the aerospace.toml file from the .dotfiles
-rm -rf $HOME/.config/aerospace/aerospace.toml
-ln -sw $DOTFILES/config/aerospace/aerospace.toml $HOME/.config/aerospace/aerospace.toml
-
 # Source aliases from .dotfiles
 source $DOTFILES/zsh/aliases.zsh

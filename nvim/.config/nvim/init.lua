@@ -1,6 +1,6 @@
-require 'core.options' -- Load general options
-require 'core.keymaps' -- Load general keymaps
-require 'core.snippets' -- Custom code snippets
+require('core.options') -- Load general options
+require('core.keymaps') -- Load general keymaps
+require('core.snippets') -- Custom code snippets
 
 -- Install package manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -18,22 +18,22 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup plugins
 require('lazy').setup({
-  require 'plugins.autocompletion',
-  require 'plugins.bufferline',
-  require 'plugins.colorscheme',
-  require 'plugins.comment',
-  require 'plugins.debug',
-  require 'plugins.gitsigns',
-  require 'plugins.indent-blankline',
-  require 'plugins.lazygit',
-  require 'plugins.lsp',
-  require 'plugins.lualine',
-  require 'plugins.misc',
-  require 'plugins.neo-tree',
-  require 'plugins.none-ls',
-  require 'plugins.telescope',
-  require 'plugins.treesitter',
-  require 'plugins.vim-tmux-navigator',
+  require('plugins.autocompletion'),
+  require('plugins.bufferline'),
+  require('plugins.colorscheme'),
+  require('plugins.comment'),
+  require('plugins.debug'),
+  require('plugins.gitsigns'),
+  require('plugins.indent-blankline'),
+  require('plugins.lazygit'),
+  require('plugins.lsp'),
+  require('plugins.lualine'),
+  require('plugins.misc'),
+  require('plugins.neo-tree'),
+  require('plugins.none-ls'),
+  require('plugins.telescope'),
+  require('plugins.treesitter'),
+  require('plugins.vim-tmux-navigator'),
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
