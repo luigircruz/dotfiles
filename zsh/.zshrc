@@ -5,10 +5,6 @@ export DOTFILES=$HOME/Code/dotfiles
 rm -rf $HOME/.config/ghostty/config
 ln -sw $DOTFILES/config/ghostty/config $HOME/.config/ghostty/config
 
-# Removes .tmux.conf from $HOME (if it exists) and symlinks the .tmux.conf file from the .dotfiles
-rm -rf $HOME/.tmux.conf
-ln -sw $DOTFILES/config/tmux/tmux.conf $HOME/.tmux.conf
-
 # Removes aerospace.toml from $HOME/.config/aerospace/ (if it exists) and symlinks the aerospace.toml file from the .dotfiles
 rm -rf $HOME/.config/aerospace/aerospace.toml
 ln -sw $DOTFILES/config/aerospace/aerospace.toml $HOME/.config/aerospace/aerospace.toml
