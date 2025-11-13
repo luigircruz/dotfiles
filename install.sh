@@ -74,7 +74,7 @@ stow -t ~ aerospace karabiner neovim starship wezterm tmux zsh
 
 # Create a Sites directory
 echo "Creating code directories"
-mkdir $HOME/Sites
+mkdir $HOME/Code
 mkdir $HOME/Work
 
 # Clone Github repositories

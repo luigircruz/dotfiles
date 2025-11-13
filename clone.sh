@@ -2,7 +2,7 @@
 
 echo "Cloning repositories..."
 
-SITES=$HOME/Sites
+CODE=$HOME/Code
 
 # Personal
-git clone git@github.com:luigircruz/luigicruz.dev.git $SITES/luigicruz.dev
+git clone git@github.com:luigircruz/luigicruz.dev.git $CODE/luigicruz.dev
