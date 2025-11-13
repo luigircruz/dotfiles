@@ -4,7 +4,7 @@ This directory contains the dotfiles for my mac system.
 
 # Install Script
 
-1.Clone this repository and save it into `~/dotfiles`
+1. Clone this repository and save it into `~/dotfiles`
 ```bash
 git clone https://github.com/luigircruz/dotfiles.git $HOME/dotfiles
 ```
