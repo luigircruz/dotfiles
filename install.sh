@@ -26,12 +26,17 @@ if test ! $(which brew); then
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
 # Turn off brew analytics
 brew analytics off
 
 # Update Homebrew recipes
 echo "Updating homebrew..."
 brew update
+
+## Core Utils
+echo "Install gnu coreutils"
+brew install coreutils
 
 echo "Installing dependencies with bundle"
 brew tap homebrew/bundle
@@ -56,6 +61,9 @@ if [ ! -d "$HOME/dotfiles" ]; then
   echo "Cloning dotfiles repository..."
   git clone https://github.com/luigircruz/dotfiles.git $HOME/dotfiles
 fi
+
+# export gnu coreutils to path
+echo 'export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"' >>~/.zshrc
 
 # Navigate to dotfiles directory
 cd $HOME/dotfiles || exit
