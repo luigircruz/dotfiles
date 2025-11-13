@@ -102,9 +102,35 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+# Configure ls to use eza
+alias ls="eza --long --color=always --icons=always --no-user"
+
+# Initialize zoxide
+eval "$(zoxide init zsh)"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# Set up fd key bindings and fuzzy completion
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
+# Use ctrl-t to open fzf in a new tab
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# Use alt-c to open fzf in a new window
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+export FZF_DEFAULT_OPTS="--height=50% --layout=default --border --color=hl:#9893a5"
+# fzf default for Tmux
+export FZF_TMUX_OPTS=" -p90%,70% "
+
+# Setup fzf previews
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview eza --tree --color=always {} | head -200'"
 
 # Path to your dotfiles.
 export DOTFILES=$HOME/dotfiles
 
 # Source aliases from .dotfiles
 source $DOTFILES/zsh/aliases.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
