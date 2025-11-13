@@ -72,4 +72,13 @@ cd $HOME/dotfiles || exit
 echo "Stowing dotfiles..."
 stow -t ~ aerospace karabiner neovim starship wezterm tmux zsh
 
+# Create a Sites directory
+echo "Creating code directories"
+mkdir $HOME/Sites
+mkdir $HOME/Work
+
+# Clone Github repositories
+echo "Running clone.sh"
+./clone.sh
+
 echo "Dotfiles setup complete!"
