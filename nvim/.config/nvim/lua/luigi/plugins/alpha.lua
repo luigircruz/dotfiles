@@ -19,6 +19,7 @@ return {
       dashboard.button('n', ' ' .. ' New file', [[<cmd> ene <BAR> startinsert <cr>]]),
       dashboard.button('r', ' ' .. ' Recent files', ':Telescope oldfiles<CR>'),
       dashboard.button('l', '󰒲 ' .. ' Lazy', '<cmd> Lazy <cr>'),
+      dashboard.button('m', '⚒︎ ' .. ' Mason', '<cmd> Mason <cr>'),
       dashboard.button('q', ' ' .. ' Quit', '<cmd> qa <cr>'),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do
