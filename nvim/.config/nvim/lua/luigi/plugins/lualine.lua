@@ -44,7 +44,7 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'rose-pine-dawn', -- Set theme based on environment variable
+        theme = 'rose-pine', -- Set theme based on environment variable
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        
