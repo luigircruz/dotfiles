@@ -134,3 +134,4 @@ export DOTFILES=$HOME/dotfiles
 # Source aliases from .dotfiles
 source $DOTFILES/zsh/aliases.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

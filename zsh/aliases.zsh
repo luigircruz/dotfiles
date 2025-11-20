@@ -2,6 +2,7 @@
 alias c="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="omz reload"
+alias vim="nvim"
 
 # Directories
 alias dotfiles="z $DOTFILES"
