@@ -70,10 +70,9 @@ cd $HOME/dotfiles || exit
 
 # Stow dotfiles packages
 echo "Stowing dotfiles..."
-stow -t ~ aerospace karabiner neovim starship wezterm tmux zsh
+stow -t ~ aerospace ghostty git homebrew nvim tmux zsh
 
-# Create a Sites directory
-echo "Creating code directories"
+echo "Creating directories"
 mkdir $HOME/Code
 mkdir $HOME/Work
 
