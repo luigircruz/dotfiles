@@ -104,7 +104,7 @@ return {
     vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
     vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
     vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-    vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
+    -- vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]resume' })
     vim.keymap.set('n', '<leader>so', builtin.oldfiles, { desc = '[S]earch Recent Files' })
@@ -113,6 +113,11 @@ return {
         symbols = { 'Class', 'Function', 'Method', 'Constructor', 'Interface', 'Module', 'Property' },
       }
     end, { desc = '[S]each LSP document [S]ymbols' })
+    vim.keymap.set('n', '<leader>sg', function()
+      builtin.live_grep {
+        additional_args = { '--hidden' },
+      }
+    end, { desc = '[S]earch by [G]rep (including hidden)' })
     vim.keymap.set('n', '<leader>s/', function()
       builtin.live_grep {
         grep_open_files = true,
