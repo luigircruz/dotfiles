@@ -21,7 +21,7 @@ local function config()
           return {
             line.sep('', hl, theme.line),
             tab.is_current() and '󰆤' or '󰆣',
-            string.format('%s:', tab.number()),
+            -- string.format('%s:', tab.number()),
             tab.name(),
             line.sep('', hl, theme.line),
             margin = ' ',

@@ -49,7 +49,7 @@ sudo scutil --set HostName "Luigi"
 sudo scutil --set LocalHostName "Luigi"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Luigi"
 sudo systemsetup -settimezone "Asia/Manila"
-sudoe defaults write com.apple.Dock autohide -bool TRUE
+sudo defaults write com.apple.Dock autohide -bool TRUE
 sudo defaults write NSGlobalDomain KeyRepeat -int 2
 sudo defaults write InitialKeyRepeat -int 15
 
