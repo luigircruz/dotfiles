@@ -202,9 +202,9 @@ return {
       dockerls = {},
       docker_compose_language_service = {},
       tailwindcss = {},
-      -- graphql = {},
+      graphql = {},
       html = { filetypes = { 'html', 'twig', 'hbs' } },
-      -- cssls = {},
+      cssls = {},
       -- ltex = {},
       -- texlab = {},
     }
