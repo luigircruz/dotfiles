@@ -1,0 +1,96 @@
+[mgr]
+cwd = { fg = "#56949f" }
+
+hovered = { fg = "#575279", bg = "#f2e9e1" }
+preview_hovered = { underline = true }
+
+find_keyword = { fg = "#ea9d34", italic = true }
+find_position = { fg = "#b4637a", bg = "reset", italic = true }
+
+marker_selected = { fg = "#56949f", bg = "#56949f" }
+marker_copied = { fg = "#ea9d34", bg = "#ea9d34" }
+marker_cut = { fg = "#B4637A", bg = "#B4637A" }
+
+tab_active = { fg = "#575279", bg = "#191724" }
+tab_inactive = { fg = "#575279", bg = "#2A273F" }
+tab_width = 1
+
+border_symbol = "│"
+border_style = { fg = "#524f67" }
+
+syntect_theme = "~/dotfiles/yazi/.config/yazi/rose-pine-dawn.tmTheme"
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#2A273F", bg = "#2A273F" }
+
+mode_normal = { fg = "#191724", bg = "#ebbcba", bold = true }
+mode_select = { fg = "#575279", bg = "#9ccfd8", bold = true }
+mode_unset = { fg = "#575279", bg = "#b4637a", bold = true }
+
+progress_label = { fg = "#575279", bold = true }
+progress_normal = { fg = "#191724", bg = "#2A273F" }
+progress_error = { fg = "#B4637A", bg = "#2A273F" }
+
+permissions_t = { fg = "#31748f" }
+permissions_r = { fg = "#ea9d34" }
+permissions_w = { fg = "#B4637A" }
+permissions_x = { fg = "#9ccfd8" }
+permissions_s = { fg = "#524f67" }
+
+[input]
+border = { fg = "#524f67" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[select]
+border = { fg = "#524f67" }
+active = { fg = "#eb6f92" }
+inactive = {}
+
+[tasks]
+border = { fg = "#524f67" }
+title = {}
+hovered = { underline = true }
+
+[which]
+mask = { bg = "#313244" }
+cand = { fg = "#9ccfd8" }
+rest = { fg = "#9399b2" }
+desc = { fg = "#eb6f92" }
+separator = "  "
+separator_style = { fg = "#585b70" }
+
+[help]
+on = { fg = "#eb6f92" }
+exec = { fg = "#9ccfd8" }
+desc = { fg = "#9399b2" }
+hovered = { bg = "#585b70", bold = true }
+footer = { fg = "#2A273F", bg = "#575279" }
+
+[filetype]
+
+rules = [
+    # Images
+    { mime = "image/*", fg = "#9ccfd8" },
+
+    # Videos
+    { mime = "video/*", fg = "#ea9d34" },
+    { mime = "audio/*", fg = "#ea9d34" },
+
+    # Archives
+    { mime = "application/zip", fg = "#eb6f92" },
+    { mime = "application/gzip", fg = "#eb6f92" },
+    { mime = "application/x-tar", fg = "#eb6f92" },
+    { mime = "application/x-bzip", fg = "#eb6f92" },
+    { mime = "application/x-bzip2", fg = "#eb6f92" },
+    { mime = "application/x-7z-compressed", fg = "#eb6f92" },
+    { mime = "application/x-rar", fg = "#eb6f92" },
+
+    # Fallback
+    { name = "*", fg = "#575279" },
+    { name = "*/", fg = "#524f67" },
+]
+
