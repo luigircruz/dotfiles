@@ -11,86 +11,86 @@ marker_selected = { fg = "#56949f", bg = "#56949f" }
 marker_copied = { fg = "#ea9d34", bg = "#ea9d34" }
 marker_cut = { fg = "#B4637A", bg = "#B4637A" }
 
-tab_active = { fg = "#575279", bg = "#191724" }
-tab_inactive = { fg = "#575279", bg = "#2A273F" }
+tab_active = { fg = "#575279", bg = "#faf4ed" }
+tab_inactive = { fg = "#575279", bg = "#fffaf3" }
 tab_width = 1
 
 border_symbol = "│"
-border_style = { fg = "#524f67" }
+border_style = { fg = "#cecacd" }
 
 syntect_theme = "~/dotfiles/yazi/.config/yazi/rose-pine-dawn.tmTheme"
 
 [status]
 separator_open = ""
 separator_close = ""
-separator_style = { fg = "#2A273F", bg = "#2A273F" }
+separator_style = { fg = "#fffaf3", bg = "#fffaf3" }
 
-mode_normal = { fg = "#191724", bg = "#ebbcba", bold = true }
-mode_select = { fg = "#575279", bg = "#9ccfd8", bold = true }
+mode_normal = { fg = "#faf4ed", bg = "#d7827e", bold = true }
+mode_select = { fg = "#575279", bg = "#56949f", bold = true }
 mode_unset = { fg = "#575279", bg = "#b4637a", bold = true }
 
 progress_label = { fg = "#575279", bold = true }
-progress_normal = { fg = "#191724", bg = "#2A273F" }
-progress_error = { fg = "#B4637A", bg = "#2A273F" }
+progress_normal = { fg = "#faf4ed", bg = "#fffaf3" }
+progress_error = { fg = "#B4637A", bg = "#fffaf3" }
 
-permissions_t = { fg = "#31748f" }
+permissions_t = { fg = "#286983" }
 permissions_r = { fg = "#ea9d34" }
 permissions_w = { fg = "#B4637A" }
-permissions_x = { fg = "#9ccfd8" }
-permissions_s = { fg = "#524f67" }
+permissions_x = { fg = "#56949f" }
+permissions_s = { fg = "#cecacd" }
 
 [input]
-border = { fg = "#524f67" }
+border = { fg = "#cecacd" }
 title = {}
 value = {}
 selected = { reversed = true }
 
 [select]
-border = { fg = "#524f67" }
-active = { fg = "#eb6f92" }
+border = { fg = "#cecacd" }
+active = { fg = "#b4637a" }
 inactive = {}
 
 [tasks]
-border = { fg = "#524f67" }
+border = { fg = "#cecacd" }
 title = {}
 hovered = { underline = true }
 
 [which]
 mask = { bg = "#313244" }
-cand = { fg = "#9ccfd8" }
+cand = { fg = "#56949f" }
 rest = { fg = "#9399b2" }
-desc = { fg = "#eb6f92" }
+desc = { fg = "#b4637a" }
 separator = "  "
 separator_style = { fg = "#585b70" }
 
 [help]
-on = { fg = "#eb6f92" }
-exec = { fg = "#9ccfd8" }
+on = { fg = "#b4637a" }
+exec = { fg = "#56949f" }
 desc = { fg = "#9399b2" }
 hovered = { bg = "#585b70", bold = true }
-footer = { fg = "#2A273F", bg = "#575279" }
+footer = { fg = "#fffaf3", bg = "#575279" }
 
 [filetype]
 
 rules = [
     # Images
-    { mime = "image/*", fg = "#9ccfd8" },
+    { mime = "image/*", fg = "#56949f" },
 
     # Videos
     { mime = "video/*", fg = "#ea9d34" },
     { mime = "audio/*", fg = "#ea9d34" },
 
     # Archives
-    { mime = "application/zip", fg = "#eb6f92" },
-    { mime = "application/gzip", fg = "#eb6f92" },
-    { mime = "application/x-tar", fg = "#eb6f92" },
-    { mime = "application/x-bzip", fg = "#eb6f92" },
-    { mime = "application/x-bzip2", fg = "#eb6f92" },
-    { mime = "application/x-7z-compressed", fg = "#eb6f92" },
-    { mime = "application/x-rar", fg = "#eb6f92" },
+    { mime = "application/zip", fg = "#b4637a" },
+    { mime = "application/gzip", fg = "#b4637a" },
+    { mime = "application/x-tar", fg = "#b4637a" },
+    { mime = "application/x-bzip", fg = "#b4637a" },
+    { mime = "application/x-bzip2", fg = "#b4637a" },
+    { mime = "application/x-7z-compressed", fg = "#b4637a" },
+    { mime = "application/x-rar", fg = "#b4637a" },
 
     # Fallback
     { name = "*", fg = "#575279" },
-    { name = "*/", fg = "#524f67" },
+    { name = "*/", fg = "#cecacd" },
 ]
 
