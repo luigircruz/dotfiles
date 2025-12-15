@@ -135,3 +135,6 @@ export DOTFILES=$HOME/dotfiles
 source $DOTFILES/zsh/aliases.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+# bun completions
+[ -s "/Users/luigicruz/.bun/_bun" ] && source "/Users/luigicruz/.bun/_bun"
