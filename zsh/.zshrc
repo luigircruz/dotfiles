@@ -102,7 +102,9 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+# Source tmux
+tmux source ~/dotfiles/tmux/.config/tmux/.tmux.conf
 
 # Configure ls to use eza
 alias ls="eza --long --color=always --icons=always --no-user"
